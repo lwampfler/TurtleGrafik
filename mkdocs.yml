@@ -1,0 +1,13 @@
+site_name: Programmieren Docs
+
+theme:
+  name: "material"
+
+nav:
+  - index.md
+  - Turtle Tutorial: tutorial_turtle.md
+  - Programmieren 1: tutorial_prog1.md
+  - Programmieren 2: tutorial_prog2.md
+  - How-To Guides: how-to-guides.md
+  - reference.md
+  - explanation.md
