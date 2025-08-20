@@ -19,6 +19,37 @@ joe.forward(100)    # Argument in Pixel
 joe.right(90)       # Argument in Grad
 ```
 
+## Zufallszahlen
+
+1. Import der Funktion `randint` aus dem Modul `random`:
+
+`````
+from random import randint````
+
+2. Verwenden der `randint`-Funktion.
+`````
+
+wuerfelzahl = randint(1, 6)
+
+zahlZwischen1und20 = randint(1, 20)
+
+```
+Das erste Argument der Funktion ist die kleinstmögliche, das zweite die grösstmögliche Zufallszahl, die zurückgegeben werden kann.
+
+3. Beispiel: Würfe zählen bis zur ersten Doppelsechs
+```
+
+from random import randint
+number = 0
+while True:
+a = randint(1, 6)
+b = randint(1, 6)
+number += 1
+if a == 6 and b == 6:
+print(number)
+
+````
+
 ## Mathematik
 
 Python bietet viele eingebaute Funktionen für mathematische Berechnungen. Hier sind einige wichtige Beispiele:
@@ -44,7 +75,7 @@ ergebnis = 10 % 3     # ergibt 1
 
 # Potenz (hoch)
 ergebnis = 2 ** 3     # ergibt 8
-```
+````
 
 ### Mathematische Funktionen mit dem Modul `math`
 
