@@ -363,13 +363,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#mathematik" class="md-nav__link">
+  <a href="#zufallszahlen" class="md-nav__link">
     <span class="md-ellipsis">
-      Mathematik
+      Zufallszahlen
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Mathematik">
+    <nav class="md-nav" aria-label="Zufallszahlen">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -452,13 +452,13 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#mathematik" class="md-nav__link">
+  <a href="#zufallszahlen" class="md-nav__link">
     <span class="md-ellipsis">
-      Mathematik
+      Zufallszahlen
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Mathematik">
+    <nav class="md-nav" aria-label="Zufallszahlen">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -508,9 +508,35 @@ makeTurtle()           # Turtle-Playground erstellen
 <pre><code class="language-python">joe.forward(100)    # Argument in Pixel
 joe.right(90)       # Argument in Grad
 </code></pre>
-<h2 id="mathematik">Mathematik</h2>
-<p>Python bietet viele eingebaute Funktionen für mathematische Berechnungen. Hier sind einige wichtige Beispiele:</p>
-<pre><code class="language-python"># Addition
+<h2 id="zufallszahlen">Zufallszahlen</h2>
+<ol>
+<li>Import der Funktion <code>randint</code> aus dem Modul <code>random</code>:</li>
+</ol>
+<pre><code>from random import randint````
+
+2. Verwenden der `randint`-Funktion.
+</code></pre>
+<p>wuerfelzahl = randint(1, 6)</p>
+<p>zahlZwischen1und20 = randint(1, 20)</p>
+<pre><code>Das erste Argument der Funktion ist die kleinstmögliche, das zweite die grösstmögliche Zufallszahl, die zurückgegeben werden kann.
+
+3. Beispiel: Würfe zählen bis zur ersten Doppelsechs
+</code></pre>
+<p>from random import randint
+number = 0
+while True:
+a = randint(1, 6)
+b = randint(1, 6)
+number += 1
+if a == 6 and b == 6:
+print(number)</p>
+<pre><code>
+## Mathematik
+
+Python bietet viele eingebaute Funktionen für mathematische Berechnungen. Hier sind einige wichtige Beispiele:
+
+```python
+# Addition
 ergebnis = 2 + 3      # ergibt 5
 
 # Subtraktion
