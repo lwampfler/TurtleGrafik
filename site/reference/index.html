@@ -369,7 +369,16 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Zufallszahlen">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mathematik" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mathematik
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mathematik">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -458,7 +467,16 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Zufallszahlen">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mathematik" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mathematik
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mathematik">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -512,31 +530,33 @@ joe.right(90)       # Argument in Grad
 <ol>
 <li>Import der Funktion <code>randint</code> aus dem Modul <code>random</code>:</li>
 </ol>
-<pre><code>from random import randint````
-
-2. Verwenden der `randint`-Funktion.
+<pre><code>from random import randint
 </code></pre>
-<p>wuerfelzahl = randint(1, 6)</p>
-<p>zahlZwischen1und20 = randint(1, 20)</p>
-<pre><code>Das erste Argument der Funktion ist die kleinstmögliche, das zweite die grösstmögliche Zufallszahl, die zurückgegeben werden kann.
+<ol>
+<li>Verwenden der <code>randint</code>-Funktion.</li>
+</ol>
+<pre><code>wuerfelzahl = randint(1, 6)
 
-3. Beispiel: Würfe zählen bis zur ersten Doppelsechs
+zahlZwischen1und20 = randint(1, 20)
 </code></pre>
-<p>from random import randint
+<p><strong>Hinweis:</strong> Das erste Argument der Funktion ist die kleinstmögliche, das zweite die grösstmögliche Zufallszahl, die zurückgegeben werden kann.</p>
+<ol>
+<li>Beispiel: Würfe zählen bis zur ersten Doppelsechs</li>
+</ol>
+<pre><code>
+from random import randint
 number = 0
 while True:
 a = randint(1, 6)
 b = randint(1, 6)
 number += 1
 if a == 6 and b == 6:
-print(number)</p>
-<pre><code>
-## Mathematik
+print(number)
 
-Python bietet viele eingebaute Funktionen für mathematische Berechnungen. Hier sind einige wichtige Beispiele:
-
-```python
-# Addition
+</code></pre>
+<h2 id="mathematik">Mathematik</h2>
+<p>Python bietet viele eingebaute Funktionen für mathematische Berechnungen. Hier sind einige wichtige Beispiele:</p>
+<pre><code class="language-python"># Addition
 ergebnis = 2 + 3      # ergibt 5
 
 # Subtraktion
