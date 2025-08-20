@@ -39,17 +39,15 @@ zahlZwischen1und20 = randint(1, 20)
 
 3. Beispiel: Würfe zählen bis zur ersten Doppelsechs
 
-```
-
+```python
 from random import randint
 number = 0
 while True:
-a = randint(1, 6)
-b = randint(1, 6)
-number += 1
-if a == 6 and b == 6:
-print(number)
-
+    a = randint(1, 6)
+    b = randint(1, 6)
+    number += 1
+    if a == 6 and b == 6:
+        print(number)
 ```
 
 ## Mathematik
