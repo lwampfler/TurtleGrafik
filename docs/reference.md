@@ -98,3 +98,35 @@ wert = round(3.14159, 2)  # ergibt 3.14
 ```
 
 **Hinweis:** Für viele Funktionen im Modul `math` müssen Winkel im Bogenmaß (Radian) angegeben werden, nicht in Grad.
+
+## Die `range`-Funktion
+
+Die `range`-Funktion erzeugt eine Folge von Zahlen. Sie wird häufig in Schleifen verwendet, um einen bestimmten Bereich von Zahlen zu durchlaufen.
+
+**Syntax:**
+
+```python
+range(start, stop, step)
+```
+
+- `start`: Startwert (inklusive, optional, Standard: 0)
+- `stop`: Endwert (exklusive, erforderlich)
+- `step`: Schrittweite (optional, Standard: 1)
+
+**Beispiele:**
+
+```python
+for i in range(5):
+    print(i)
+# Ausgabe: 0 1 2 3 4
+
+for i in range(2, 7):
+    print(i)
+# Ausgabe: 2 3 4 5 6
+
+for i in range(10, 0, -2):
+    print(i)
+# Ausgabe: 10 8 6 4 2
+```
+
+**Hinweis:** Die erzeugte Zahlenfolge enthält den Startwert, aber nicht den Endwert.

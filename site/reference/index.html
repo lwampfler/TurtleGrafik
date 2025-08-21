@@ -395,6 +395,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#die-range-funktion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Die range-Funktion
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -490,6 +499,15 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#die-range-funktion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Die range-Funktion
+    </span>
+  </a>
   
 </li>
       
@@ -592,6 +610,30 @@ wert = abs(-5)            # ergibt 5
 wert = round(3.14159, 2)  # ergibt 3.14
 </code></pre>
 <p><strong>Hinweis:</strong> Für viele Funktionen im Modul <code>math</code> müssen Winkel im Bogenmaß (Radian) angegeben werden, nicht in Grad.</p>
+<h2 id="die-range-funktion">Die <code>range</code>-Funktion</h2>
+<p>Die <code>range</code>-Funktion erzeugt eine Folge von Zahlen. Sie wird häufig in Schleifen verwendet, um einen bestimmten Bereich von Zahlen zu durchlaufen.</p>
+<p><strong>Syntax:</strong></p>
+<pre><code class="language-python">range(start, stop, step)
+</code></pre>
+<ul>
+<li><code>start</code>: Startwert (inklusive, optional, Standard: 0)</li>
+<li><code>stop</code>: Endwert (exklusive, erforderlich)</li>
+<li><code>step</code>: Schrittweite (optional, Standard: 1)</li>
+</ul>
+<p><strong>Beispiele:</strong></p>
+<pre><code class="language-python">for i in range(5):
+    print(i)
+# Ausgabe: 0 1 2 3 4
+
+for i in range(2, 7):
+    print(i)
+# Ausgabe: 2 3 4 5 6
+
+for i in range(10, 0, -2):
+    print(i)
+# Ausgabe: 10 8 6 4 2
+</code></pre>
+<p><strong>Hinweis:</strong> Die erzeugte Zahlenfolge enthält den Startwert, aber nicht den Endwert.</p>
 
 
 
