@@ -247,6 +247,19 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Programmieren 1
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -258,6 +271,34 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#input-und-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      Input und Output
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -371,6 +412,23 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#input-und-output" class="md-nav__link">
+    <span class="md-ellipsis">
+      Input und Output
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -386,6 +444,44 @@
 
 
 <h1 id="programmieren-1">Programmieren 1</h1>
+<h2 id="input-und-output">Input und Output</h2>
+<p>Mit den Funktionen <code>input</code> resp. <code>print</code> können in einem Programm Werte vom Benutzer eingelesen (<code>input</code>) resp. Werte auf der Konsole ausgegeben (<code>print</code>) werden.</p>
+<ol>
+<li><code>input</code></li>
+</ol>
+<p>Beispielsweise möchte man den Benutzer nach seinem Namen fragen. Dies kann mit der folgenden Code-Zeile erreicht werden:</p>
+<pre><code class="language-python">name = input(&quot;Wie heisst Du?&quot;)
+</code></pre>
+<p>Wichtig:</p>
+<ul>
+<li>Das Argument von <code>input</code> (der Wert in Klammern nach <code>input</code>) muss immer mit Anführungs- und Schlusszeichen geschrieben werden, es handelt sich um einen sogenannten <strong>String</strong>.</li>
+<li>Wenn der Benutzer auf die Aufforderung hin einen Namen eingibt (z.B. <code>Petra</code>), so ist anschliessend der Wert <code>'Petra'</code> auf der Variablen <code>name</code> gespeichert. Diesen Wert kann später unter <code>name</code> wieder abgefragt werden.</li>
+<li>Wenn man eine Zahl vom Benutzer abfragen möchte (und nicht einen Namen oder anderen Text), so muss man vor dem Abspeichern den Rückgabewert von <code>input</code> noch in einen Integer (ganze Zahl) verwandeln. Dies kann man folgendermassen erreichen:</li>
+</ul>
+<pre><code class="language-python">alter = int(input(&quot;Wie alt bist Du?&quot;))
+</code></pre>
+<p>Die <code>int</code>-Funktion wird eine Zahl, die eingegeben wurde, auch als Zahl (mit der man rechnen kann) abspeichern.</p>
+<ol>
+<li><code>print</code></li>
+</ol>
+<p>Wenn man in einem Programm Resultate berechnet hat und diese ausgeben möchte, so kann man dafür die Funktion <code>print</code> verwenden.</p>
+<p>In diesem ersten Beispiel soll das Produkt von zwei Zahlen, die vom Benutzer eingegeben werden können, berechnet und ausgegeben werden.</p>
+<pre><code class="language-python">zahl1 = int(input(&quot;Wie heisst die erste Zahl?&quot;))
+zahl2 = int(input(&quot;Wie heisst die zweite Zahl?&quot;))
+
+produkt = zahl1 * zahl2
+print(&quot;Das Produkt lautet: &quot;)
+print(produkt)
+</code></pre>
+<p>Es gibt verschiedene Möglichkeiten, um Werte, die auf Variablen gespeichert sind, auszugeben. Eine einfache sind sogenannte <strong>f-Strings</strong> (formatierte Strings.) Die Variablen-Werte werden einfach in den ausgegebenen String eingebettet. Die letzten drei Zeilen kann man mit einem f-String einfacher schreiben als</p>
+<pre><code class="language-python">produkt = zahl1 * zahl2
+print(f&quot;Das Produkt lautet: {produkt}&quot;)
+</code></pre>
+<p><strong>Hinweise:</strong></p>
+<ul>
+<li>Vor dem Anführungszeichen schreibt man den Buchstaben <code>f</code> um anzugeben, dass innerhalb des Strings auch Variablen vorkommen, deren Werte ersetzt werden müssen.</li>
+<li>Innerhalb der Anführungszeichen kann man Variablen mit geschweiften Klammern ({}) setzen, deren Werte werden dann automatisch ersetzt.</li>
+</ul>
 
 
 
